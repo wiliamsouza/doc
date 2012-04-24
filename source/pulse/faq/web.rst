@@ -2,7 +2,7 @@ Web Interface
 =============
 
 I'm getting an error while creating bundles, but other deployments work.
------------------------------------------------------------------------
+------------------------------------------------------------------------
 
 If Suhosin is installed and activated on your web server, make sure than
 request.max_varname_length and post.max_name_length are set to at least 160::
