@@ -4,7 +4,9 @@ Inventory Server
 How do I inject inventories off-site?
 -------------------------------------
 
-Just use  the furnished script:
+.. note:: #TODO: Migrate and link here.
+
+Just use the furnished script:
 
 Ensure that::
 

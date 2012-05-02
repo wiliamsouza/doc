@@ -37,6 +37,9 @@ The MMC provides 3 plugins:
 :doc:`FAQ </mmc/faq>`
   Frequent asked questions.
 
+:doc:`Configuration files </mmc/config/index>`
+  The reference documentation
+
 Mandriva directory server
 =========================
 
@@ -75,6 +78,9 @@ MDS is composed of the following plugins:
 :doc:`FAQ </mds/faq>`
   Frequent asked questions.
 
+:doc:`Configuration files </mds/config/index>`
+  The reference documentation
+
 Pulse 2
 =======
 
@@ -82,7 +88,24 @@ Pulse 2 is an Open Source tool that simplifies application deployment,
 inventory, and maintenance of an IT network. It provides useful features to
 rescue disk image to restore a unique computer or image to be deployed
 across the whole computers network. Remote application deployment and
-updates. Software and hardware inventory, remote diagnostic and control. 
+updates. Software and hardware inventory, remote diagnostic and control. Pulse2
+helps organizations ranging from a few computers to 100 000+ heterogeneous
+computers to inventory, maintain, update and take full control on their IT
+assets. It has been designed to handle 100 000+ computers spread on many sites. 
+It supports heterogeneous platforms such as MS Windows, GNU/Linux (Mandriva,
+Redhat, Debian, Ubuntu., etc.), Mac OSX, HP-UX, IBM AIX and Solaris systems.
+
+Pulse 2 is an easy-to-use, safe and flexible solution that lets you:
+
+* Supervise large scale facilities through the use of a single Web interface
+  console.
+* Create and deploy hard disk images of your computers (new imaging module).
+* Deploy new software and security updates on all your IT assets.
+* Perform software and hardware inventory.
+* Do remote diagnostics and remote management.
+
+:doc:`Installation </install/index>`
+  Quick install guide.
 
 :doc:`Community </pulse/community>`
   How keep in touch.
@@ -93,9 +116,27 @@ updates. Software and hardware inventory, remote diagnostic and control.
 :doc:`FAQ </pulse/faq/index>`
   Frequent asked questions.
 
+:doc:`Configuration files </pulse/config/index>`
+  The reference documentation
+
 More
 ====
 
-:doc:`Development </development>`
-  How to set up a development enviroment.
-
+:doc:`Installing development </install/development>`
+  Installing the development version.
+:doc:`Fork it </development/contributing>`
+  Contributing using github.
+:doc:`Scripts </development/scripts>`
+  Writing scripts.
+:doc:`Python module </development/python-module>`
+  How to write a python module.
+:doc:`PHP module </development/php-module>`
+  How to write a PHP module.
+:doc:`i18n and i10n </development/internationalization>`
+  Internationalization and localization.
+:doc:`Python style </development/python-code>`
+  Style guide for python code.
+:doc:`PHP style </development/php-code>`
+  Style guide for PHP code.
+:doc:`Release </development/release>`
+  Release guidelines.

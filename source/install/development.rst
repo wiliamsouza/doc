@@ -1,5 +1,5 @@
 ==================================
-How to setup a development machine
+Installing the development version
 ==================================
 
 This how to will guide you through the installation and configuration of Pulse2

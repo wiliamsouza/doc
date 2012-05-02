@@ -35,6 +35,7 @@ tools like OCS Inventory, GLPI. Nagios is also possible.
 
 Where can I found some deployment script examples?
 --------------------------------------------------
+
 .. note:: #TODO: Migrate and link here.
 
 Have a look at Pulse 2 snippets.
