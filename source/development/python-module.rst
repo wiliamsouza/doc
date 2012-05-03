@@ -7,7 +7,7 @@ Related documentations
 
 - `Full MMC Python API documentation <http://mds.mandriva.org/content/epydoc-trunk/>`_.
 - :doc:`python-code`
-- `Some basic Python / LDAP bindings documentation <http://python-ldap.sourceforge.net/doc/python-ldap/index.html>`_.
+- `Some basic Python / LDAP bindings documentation <http://www.python-ldap.org/docs.shtml>`_.
 
 Creating a Python module
 ========================
