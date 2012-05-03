@@ -22,23 +22,30 @@ MMC is made of two parts:
 
 The MMC provides 3 plugins:
 
-* base: a plugin for managing users and groups in LDAP
-* ppolicy: a plugin for managing user password policies
-* audit: a framework for recording all operations done in the MMC interface
+* base: A plugin for managing users and groups in LDAP.
+
+* :doc:`ppolicy </mmc/plugins/ppolicy>`: A plugin for managing user password
+  policies.
+
+* :doc:`audit </mmc/plugins/audit>`: A framework for recording all operations
+  done in the MMC interface.
 
 .. note:: Other plugins are part of MDS and pulse2 projects.
+
+:doc:`Installation </install/index>`
+  Quick install guide.
 
 :doc:`Community </mmc/community>`
   How keep in touch.
 
 :doc:`Roadmap </mmc/roadmap>`
-  Where we are going to
+  Where we are going to.
 
 :doc:`FAQ </mmc/faq>`
   Frequent asked questions.
 
 :doc:`Configuration files </mmc/config/index>`
-  The reference documentation
+  The reference documentation.
 
 Mandriva directory server
 =========================
@@ -49,37 +56,41 @@ policies, application settings and user profile.
 
 MDS is composed of the following plugins:
 
-* samba: The samba plugin allows the MMC to add/remove SAMBA attributes to
-  users and groups and manage samba share.
+* :doc:`samba </mds/plugins/samba>`: The samba plugin allows the MMC to 
+  add/remove SAMBA attributes to users and groups and manage samba share.
 
-* network: The network plugin allows the MMC Python API to manage DNS zones
-  and hosts, DHCP subnet and hosts, into a LDAP. Patched version of ISC BIND
-  with LDAP backend support and ISC DHCP with LDAP configuration file backend
-  support are needed. PowerDNS support is also available. 
+* :doc:`network </mds/plugins/network>`: The network plugin allows the MMC
+  Python API to manage DNS zones and hosts, DHCP subnet and hosts, into a LDAP.
+  Patched version of ISC BIND with LDAP backend support and ISC DHCP with LDAP
+  configuration file backend support are needed. PowerDNS support is also
+  available.
 
-* mail: The mail plugin allows the MMC to add/remove mail delivery management
-  attributes to users and groups, and mail virtual domains, mail aliases.
-  Zarafa support is also available.
+* :doc:`mail </mds/plugins/mail>`: The mail plugin allows the MMC to
+  add/remove mail delivery management attributes to users and groups, and mail
+  virtual domains, mail aliases. Zarafa support is also available.
 
-* sshlpk: The sshlpk plugin allows the MMC to manage lists of SSH public keys
-  on users.
+* :doc:`sshlpk </mds/plugins/sshlpk>`: The sshlpk plugin allows the MMC to
+  manage lists of SSH public keys on users.
 
 * userquota: The userquota plugin allows the MMC to set filesystem quotas to
   users. The plugin provides LDAP attributes for storing quota information.
   The plugin allows also to store network quotas in the LDAP directory for
   external tools.
 
+:doc:`Installation </install/index>`
+  Quick install guide.
+
 :doc:`Community </mds/community>`
   How keep in touch.
 
 :doc:`Roadmap </mds/roadmap>`
-  Where we are going to
+  Where we are going to.
 
 :doc:`FAQ </mds/faq>`
   Frequent asked questions.
 
 :doc:`Configuration files </mds/config/index>`
-  The reference documentation
+  The reference documentation.
 
 Pulse 2
 =======
@@ -99,9 +110,13 @@ Pulse 2 is an easy-to-use, safe and flexible solution that lets you:
 
 * Supervise large scale facilities through the use of a single Web interface
   console.
+
 * Create and deploy hard disk images of your computers (new imaging module).
+
 * Deploy new software and security updates on all your IT assets.
+
 * Perform software and hardware inventory.
+
 * Do remote diagnostics and remote management.
 
 :doc:`Installation </install/index>`
@@ -111,32 +126,43 @@ Pulse 2 is an easy-to-use, safe and flexible solution that lets you:
   How keep in touch.
 
 :doc:`Roadmap </pulse/roadmap>`
-  Where we are going to
+  Where we are going to.
 
 :doc:`FAQ </pulse/faq/index>`
   Frequent asked questions.
 
 :doc:`Configuration files </pulse/config/index>`
-  The reference documentation
+  The reference documentation.
 
 More
 ====
 
-:doc:`Installing development </install/development>`
+:doc:`Development environment </install/development>`
   Installing the development version.
+
 :doc:`Fork it </development/contributing>`
   Contributing using github.
+
 :doc:`Scripts </development/scripts>`
   Writing scripts.
+
 :doc:`Python module </development/python-module>`
   How to write a python module.
+
 :doc:`PHP module </development/php-module>`
   How to write a PHP module.
+
 :doc:`i18n and i10n </development/internationalization>`
   Internationalization and localization.
+
 :doc:`Python style </development/python-code>`
   Style guide for python code.
+
 :doc:`PHP style </development/php-code>`
   Style guide for PHP code.
+
 :doc:`Release </development/release>`
   Release guidelines.
+
+:doc:`Audit specification </mmc/specs/audit>`
+  MMC audit framework specification.
