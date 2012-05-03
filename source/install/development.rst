@@ -34,12 +34,17 @@ Clone the github repository::
 
     $ git clone git://github.com/mandriva-management-console/mmc.git
 
-Compile and install::
+To compile and install all modules run::
 
     $ ./autogen.sh
     $ ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
     $ make
     # make install
+
+You can disable MDS or Pulse module installation using:
+
+* ``--disable-mds``: Do not install MDS set of modules.
+* ``--disable-pulse2``: Do not install Pulse2 set of modules.
 
 You can update by running the following command::
 
@@ -64,13 +69,13 @@ Debconf will ask only ldap root password by default to more granular configurati
 
 Using dpkg-reconfigure debconf will ask you for:
 
-    * Omit OpenLDAP server configuration?: Choose <No>.
-    * DNS domain name: Enter you domain name.
-    * Organization name: Enter organization name.
-    * Admin password: Enter a password and confirm in next screen.
-    * Database backend to use: choose HDB.
-    * Do you want the database to be removed when slapd is purged: Choose <No>.
-    * Allow LDAPv2 protocol: Choose <NO>.
+* Omit OpenLDAP server configuration?: Choose <No>.
+* DNS domain name: Enter you domain name.
+* Organization name: Enter organization name.
+* Admin password: Enter a password and confirm in next screen.
+* Database backend to use: choose HDB.
+* Do you want the database to be removed when slapd is purged: Choose <No>.
+* Allow LDAPv2 protocol: Choose <NO>.
 
 Centos::
 
@@ -85,7 +90,7 @@ Schema
 
 #TODO: Talk more about openldap changes in config and schema new storage.
 
-Copy mmc schema to your corrent directory::
+Copy mmc schema to your current directory::
 
     $ cp /usr/share/doc/python-mmc-base/contrib/ldap/mmc.schema .
 
