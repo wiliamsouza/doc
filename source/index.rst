@@ -3,20 +3,36 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+
+===========
+Get started
+===========
+
+This documentation holds information about three distinct projects
+:ref:`mmc` (MMC), :ref:`mds` (MDS) and :ref:`pulse`. MDS and Pulse2 is build on
+top of MMC which is the base for MDS and Pulse2 plugins.
+
+In order to install MDS or Pulse2 plugins you first need to install and 
+configure :ref:`mmc`.
+
+.. contents:: Table of Contents
+
+.. _mmc:
+
 Mandriva management console
 ===========================
 
-Mandriva Management Console(MMC) is a framework used by Mandriva Directory
-Server(MDS) and Pulse 2 projects that provides plugins for MMC.
+Mandriva Management Console is a framework used by :ref:`mds` and :ref:`pulse` 
+projects.
 
 MMC is made of two parts:
 
-* An agent running on the machine to manage. We call it MMC agent.
-  The agent exports to the network several plugins that allow to manage the
-  machine. Of course, there can be multiple agents running on the network.
-  The agent and its plugins are written in Python.
+* An agent running on the machine, it is called MMC agent.
+  The agent exports to the network several plugins that allow to remote 
+  manage the machine. Of course, there can be multiple agents running on the
+  network. The agent and its plugins are written in Python.
 
-* A web interface, that talks to the agent(s) using XML-RPC.
+* A web interface, that control the agent(s) using XML-RPC.
   The interface is written in PHP, and use the scriptaculous and prototype
   frameworks to provide an AJAX experience across all major browsers.
 
@@ -30,7 +46,7 @@ The MMC provides 3 plugins:
 * :doc:`audit </mmc/plugins/audit>`: A framework for recording all operations
   done in the MMC interface.
 
-.. note:: Other plugins are part of MDS and pulse2 projects.
+.. note:: Other plugins are part of :ref:`mds` and :ref:`pulse` projects.
 
 :doc:`Installation </install/index>`
   Quick install guide.
@@ -46,6 +62,8 @@ The MMC provides 3 plugins:
 
 :doc:`Configuration files </mmc/config/index>`
   The reference documentation.
+
+.. _mds:
 
 Mandriva directory server
 =========================
@@ -91,6 +109,8 @@ MDS is composed of the following plugins:
 
 :doc:`Configuration files </mds/config/index>`
   The reference documentation.
+
+.. _pulse:
 
 Pulse 2
 =======
