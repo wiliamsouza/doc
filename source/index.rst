@@ -32,8 +32,8 @@ MMC is made of two parts:
   manage the machine. Of course, there can be multiple agents running on the
   network. The agent and its plugins are written in Python.
 
-* A web interface, that control the agent(s) using XML-RPC.
-  The interface is written in PHP, and use the scriptaculous and prototype
+* A web interface, that controls the agent(s) using XML-RPC.
+  The interface is written in PHP, and uses the scriptaculous and prototype
   frameworks to provide an AJAX experience across all major browsers.
 
 The MMC provides 3 plugins:
