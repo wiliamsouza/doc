@@ -27,10 +27,10 @@ projects.
 
 MMC is made of two parts:
 
-* An agent running on the machine, it is called MMC.
-  The agent exports to the network several plugins that allow to remote 
-  manage the machine. Of course, there can be multiple agents running on the
-  network. The agent and plugins are written in Python.
+* An agent running on the machine. The agent exports to the network several
+  plugins that allow to remote manage the machine. Of course, there can be
+  multiple agents running on the network. The agent and plugins are written
+  in Python.
 
 * A web interface, that controls the agent(s) using XML-RPC.
   The interface is written in PHP, and uses the scriptaculous and prototype
@@ -48,7 +48,7 @@ The MMC provides 3 plugins:
 
 .. note:: Other plugins are part of :ref:`mds` and :ref:`pulse` projects.
 
-:doc:`Installation </install/index>`
+:doc:`Installation </mmc/install/index>`
   Quick install guide.
 
 :doc:`Community </mmc/community>`
@@ -95,7 +95,7 @@ MDS is composed of the following plugins:
   The plugin also allows to store network quotas in the LDAP directory for
   external tools.
 
-:doc:`Installation </install/index>`
+:doc:`Installation </mds/install/index>`
   Quick install guide.
 
 :doc:`Community </mds/community>`
@@ -140,7 +140,7 @@ Pulse 2 is an easy-to-use, safe and flexible solution that allows you:
 
 * Do remote diagnostics and remote management.
 
-:doc:`Installation </install/index>`
+:doc:`Installation </mds/install/index>`
   Quick install guide.
 
 :doc:`Community </pulse/community>`
