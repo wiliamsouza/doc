@@ -8,9 +8,9 @@
 Get started
 ===========
 
-This documentation holds information about three distinct projects
-:ref:`mmc` (MMC), :ref:`mds` (MDS) and :ref:`pulse`. MDS and Pulse2 is build on
-top of MMC which is the base for MDS and Pulse2 plugins.
+This documentation holds information about three distinct projects:
+:ref:`mmc` (MMC), :ref:`mds` (MDS) and :ref:`pulse`. MDS and Pulse2 are build on
+top of MMC which works as base for MDS and Pulse2 plugins.
 
 In order to install MDS or Pulse2 plugins you first need to install and 
 configure :ref:`mmc`.
@@ -27,10 +27,10 @@ projects.
 
 MMC is made of two parts:
 
-* An agent running on the machine, it is called MMC agent.
+* An agent running on the machine, it is called MMC.
   The agent exports to the network several plugins that allow to remote 
   manage the machine. Of course, there can be multiple agents running on the
-  network. The agent and its plugins are written in Python.
+  network. The agent and plugins are written in Python.
 
 * A web interface, that controls the agent(s) using XML-RPC.
   The interface is written in PHP, and uses the scriptaculous and prototype
@@ -52,13 +52,13 @@ The MMC provides 3 plugins:
   Quick install guide.
 
 :doc:`Community </mmc/community>`
-  How keep in touch.
+  How to keep in touch.
 
 :doc:`Roadmap </mmc/roadmap>`
   Where we are going to.
 
 :doc:`FAQ </mmc/faq>`
-  Frequent asked questions.
+  Frequently asked questions.
 
 :doc:`Configuration files </mmc/config/index>`
   The reference documentation.
@@ -70,17 +70,17 @@ Mandriva directory server
 
 Mandriva Directory Server is an open source enterprise directory platform
 based on LDAP designed to manage identities, access control informations,
-policies, application settings and user profile.
+policies, application settings and user profiles.
 
 MDS is composed of the following plugins:
 
 * :doc:`samba </mds/plugins/samba>`: The samba plugin allows the MMC to 
-  add/remove SAMBA attributes to users and groups and manage samba share.
+  add/remove SAMBA attributes to users and groups and manage samba shares.
 
 * :doc:`network </mds/plugins/network>`: The network plugin allows the MMC
-  Python API to manage DNS zones and hosts, DHCP subnet and hosts, into a LDAP.
+  Python API to manage DNS zones and hosts, DHCP subnets and hosts, into a LDAP.
   Patched version of ISC BIND with LDAP backend support and ISC DHCP with LDAP
-  configuration file backend support are needed. PowerDNS support is also
+  configuration file backend support is needed. PowerDNS support is also
   available.
 
 * :doc:`mail </mds/plugins/mail>`: The mail plugin allows the MMC to
@@ -92,7 +92,7 @@ MDS is composed of the following plugins:
 
 * userquota: The userquota plugin allows the MMC to set filesystem quotas to
   users. The plugin provides LDAP attributes for storing quota information.
-  The plugin allows also to store network quotas in the LDAP directory for
+  The plugin also allows to store network quotas in the LDAP directory for
   external tools.
 
 :doc:`Installation </install/index>`
@@ -102,10 +102,10 @@ MDS is composed of the following plugins:
   How keep in touch.
 
 :doc:`Roadmap </mds/roadmap>`
-  Where we are going to.
+  What's coming up next.
 
 :doc:`FAQ </mds/faq>`
-  Frequent asked questions.
+  Frequently asked questions.
 
 :doc:`Configuration files </mds/config/index>`
   The reference documentation.
@@ -117,16 +117,17 @@ Pulse 2
 
 Pulse 2 is an Open Source tool that simplifies application deployment,
 inventory, and maintenance of an IT network. It provides useful features to
-rescue disk image to restore a unique computer or image to be deployed
+create rescue disk images to restore a unique computer or image to be deployed
 across the whole computers network. Remote application deployment and
-updates. Software and hardware inventory, remote diagnostic and control. Pulse2
-helps organizations ranging from a few computers to 100 000+ heterogeneous
-computers to inventory, maintain, update and take full control on their IT
-assets. It has been designed to handle 100 000+ computers spread on many sites. 
-It supports heterogeneous platforms such as MS Windows, GNU/Linux (Mandriva,
-Redhat, Debian, Ubuntu., etc.), Mac OSX, HP-UX, IBM AIX and Solaris systems.
+updates. Software and hardware inventory, remote diagnostic and control. 
 
-Pulse 2 is an easy-to-use, safe and flexible solution that lets you:
+Pulse2 helps organizations with a range of a few computers to 100 000+ 
+heterogeneous to inventory, maintain, update and take full control on their
+IT assets. It's support for heterogeneous platforms includes MS Windows, 
+GNU/Linux (Mandriva, Redhat, Debian, Ubuntu., etc.), Mac OSX, HP-UX, IBM AIX and
+Solaris systems.
+
+Pulse 2 is an easy-to-use, safe and flexible solution that allows you:
 
 * Supervise large scale facilities through the use of a single Web interface
   console.
@@ -143,13 +144,13 @@ Pulse 2 is an easy-to-use, safe and flexible solution that lets you:
   Quick install guide.
 
 :doc:`Community </pulse/community>`
-  How keep in touch.
+  How to keep in touch.
 
 :doc:`Roadmap </pulse/roadmap>`
-  Where we are going to.
+  What's coming up next. 
 
 :doc:`FAQ </pulse/faq/index>`
-  Frequent asked questions.
+  Frequently asked questions.
 
 :doc:`Configuration files </pulse/config/index>`
   The reference documentation.
