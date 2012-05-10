@@ -2,22 +2,6 @@
 Installation from source tarbal
 ===============================
 
-Pre-requisites
-==============
-
-This python modules are needed for MMC to run:
-
-- python-twisted-web
-- python-ldap
-- pylibacl
-- pyopenssl
-
-The MMC web interface is written in PHP4. Basically, you just need to install
-an Apache 2 server with PHP5 support. The XML-RPC module of PHP is needed too.
-
-Installation
-============
-
 Get the current tarball at this URL: ftp://mds.mandriva.org/pub/mmc-core/sources/current/
 
 ::
