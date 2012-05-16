@@ -2,6 +2,9 @@
 Installing the development version
 ==================================
 
+In order to install Pulse2 and it's plugins you first need to install and
+configure :doc:`MMC </mmc/intro>`.
+
 This how to will guide you through the installation and configuration of Pulse2
 development environment
 
@@ -36,15 +39,11 @@ Clone the github repository::
 
 To compile and install all modules run::
 
+    $ $ cd pulse2/
     $ ./autogen.sh
     $ ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
     $ make
     # make install
-
-You can disable MDS or Pulse module installation using:
-
-* ``--disable-mds``: Do not install MDS set of modules.
-* ``--disable-pulse2``: Do not install Pulse2 set of modules.
 
 You can update by running the following command::
 
@@ -85,51 +84,13 @@ Mandriva::
 
     # urpmi
 
-Schema
-------
+.. include:: /pulse2/install/schema.rst
 
-#TODO: Talk more about openldap changes in config and schema new storage.
-
-Copy mmc schema to your current directory::
-
-    $ cp /usr/share/doc/python-mmc-base/contrib/ldap/mmc.schema .
-
-Create a file mmc.conf with::
-
-    include    mmc.schema
-
-Create a folder schemas::
-
-    $ mkdir schemas
-
-Convert mcc.schema to ldif::
-
-   $ slaptest -f mmc.conf -F schemas/
-
-Edit mmc schema, remove {0} from dn:, cn: and add cn=schema,cn=config to dn ::
-
-    dn: cn=mmc,cn=schema,cn=config
-    objectClass: olcSchemaConfig
-    cn: mmc
-
-Remove the following lines at the bottom of that file::
-
-    structuralObjectClass: olcSchemaConfig
-    entryUUID: 0ec2fe60-1381-1031-8f21-f92982aeda45
-    creatorsName: cn=config
-    createTimestamp: 20120405153755Z
-    entryCSN: 20120405153755.316520Z#000000#000#000000
-    modifiersName: cn=config
-    modifyTimestamp: 20120405153755Z
-
-Add schema to ldap::
-
-   # ldapadd -Y EXTERNAL -H ldapi:/// -f schemas/cn\=config/cn\=schema/cn\=\{0\}mmc.ldif
 
 MySQL
 =====
 
-Debian:
+Debian::
 
     # apt-get install mysql-server
 
@@ -150,7 +111,6 @@ Debian::
 
    # apt-get install apache2 php5 php5-gd php5-xmlrpc
 
-
 Centos::
 
     # yum install
@@ -170,33 +130,21 @@ Restart apache2::
 
     # /etc/init.d/apache2 restart
 
-Pulse setup
-===========
+.. include:: /pulse2/install/pulse-setup.rst
 
-pulse2-setup will ask::
-
-    INFO     - Load defaults values from existing config
-    INPUT    - Enable audit module (Y/n): y
-    INPUT    - Enable inventory server (Y/n): y
-    INPUT    - Enable imaging server (Y/n): y
-    INPUT    - Enable package server (proxy) (Y/n): y
-    INPUT    - Server external IP address (default: 10.0.2.15): 172.16.0.4
-    INFO     - Run setup
-    INPUT    - Database host (default: localhost): 
-    INPUT    - Database admin user (default: root): 
-    INPUT    - Database admin password: 
-    ...
-    INPUT    - LDAP uri (default: ldap://127.0.0.1:389):
-    INPUT    - LDAP base DN (default: dc=mandriva, dc=com): 
-    INPUT    - LDAP admin DN (default: cn=admin, dc=mandriva, dc=com): 
-    INPUT    - LDAP admin password: 
-    ...
-    INPUT    - Wake-on-lan tool path (default: /usr/sbin/pulse2-wol):
-
-DHCP
-====
+DHCP Install
+============
 
 Debian::
-   # apt-get install isc-dhcp-server
 
+    # apt-get install isc-dhcp-server
+
+
+.. include:: /pulse2/install/dhcp.rst
+
+.. include:: /pulse2/install/imaging.rst
+
+.. include:: /pulse2/install/nfs.rst
+
+.. include:: /pulse2/install/tftp.rst
 

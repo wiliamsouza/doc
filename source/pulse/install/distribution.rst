@@ -2,5 +2,10 @@
 Platform-specific installation instructions
 ===========================================
 
-For now the only way to install MMC, MDS and Pulse is from source code to do
-this proced to :doc:`installing the development version.</install/development>` 
+How to install the Mandriva Management Console provided by a third-party
+Linux distributors.
+
+In order to install Pulse2 and it's plugins you first need to install and
+configure :doc:`MMC </mmc/intro>`.
+
+.. note:: Coming soon

@@ -2,51 +2,81 @@
 Installation from source tarbal
 ===============================
 
-Pre-requisites
-==============
+In order to install Pulse2 and it's plugins you first need to install and
+configure :doc:`MMC </mmc/intro>`.
 
-This python modules are needed for MMC to run:
+Get the current tarball at `download page`_:: 
 
-- python-twisted-web
-- python-ldap
-- pylibacl
-- pyopenssl
-
-The MMC web interface is written in PHP4. Basically, you just need to install
-an Apache 2 server with PHP5 support. The XML-RPC module of PHP is needed too.
-
-Installation
-============
-
-Get the current tarball at this URL: ftp://mds.mandriva.org/pub/mmc-core/sources/current/
-
-::
-
-    # tar xzvf mmc-core-x.y.z.tar.gz
-    # cd mmc-core-x.y.z
-    # ./configure --sysconfdir=/etc --localstatedir=/var
+    # tar xzvf pulse2-.x.y.x.tar.gz
+    # cd pulse2-x.y.z
+    # ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
     # make
     # make install
-    # tar xzvf mds-x.y.z.tar.gz
-    # cd mds-x.y.z
-    # ./configure --sysconfdir=/etc --localstatedir=/var
-    # make
-    # make install
+
+The `pulse2-setup` tool can then be used to provision databases,
+setup and check configuration files, etc. If you plan to use imaging 
+service, please read the following section, as pulse2-setup does not 
+handle with its configuration.
 
 The default $PREFIX for installation is :file:`/usr/local`. You can change it
 on the ``./configure`` line by adding the option ``--prefix=/usr`` for example.
 
-Here are how the files are installed:
+configure options
+=================
 
-- :file:`$PREFIX/sbin/mmc-agent`: the MMC agent
-- :file:`$PREFIX/lib/mmc/`: helpers for some MMC plugins
-- :file:`/etc/mmc/`: all MMC configuration files. There files are sample files
-  you will need to edit.
-- :file:`/etc/init.d/mmc-agent`: MMC agent init script
-- :file:`$PREFIX/lib/pythonX.Y/site-packages/mmc`: MMC Python libraries and
-  plugins.
-- :file:`$PREFIX/lib/pythonX.Y/site-packages/mmc/plugins/`: MMC Python plugins
-- :file:`$PREFIX/share/mmc/`: all MMC web interface related files
-  (PHP, images, ...l)
-- :file:`$PREFIX/share/mmc/modules/`: MMC web interface plugins
-- :file:`/etc/mmc/mmc.ini`: MMC web configuration file
+The `configure` recognizes the following options to control how it operate:
+
+* --help, -h: Print a summary of all of the options to configure, and exit.
+
+* --help=short --help=recursive: Print a summary of the options unique to this
+                                 package's configure, and exit. The short
+                                 variant lists options used only in the top 
+                                 level, while the recursive variant lists
+                                 options  also present in any nested packages.
+
+* --version, -V: Print the version of Autoconf used to generate the configure
+                 script, and exit.
+
+* --cache-file=FILE: Enable the cache: use and save the results of the tests
+                     in FILE, traditionally config.cache. FILE defaults to
+                     /dev/null to disable caching.
+
+* --config-cache, -C: Alias for --cache-file=config.cache.
+
+* --quiet, --silent, -q: Do not print messages saying which checks are 
+                         being made.  To  suppress all normal output, 
+                         redirect it to /dev/null (any error messages
+                         will still be shown).
+
+* --srcdir=DIR: Look for the package's source code in directory DIR. Usually
+                configure can determine that directory automatically.
+
+* --prefix=DIR: Use DIR as the installation prefix. note Installation
+                Names for more details, including other options available
+                for fine-tuning the installation locations.
+
+* --no-create, -n: Run the configure checks, but stop before creating any
+                   output files.
+
+* --disable-conf: Do not install conf files. On a first install, you may not
+                  use this  option as configuration files are required.
+
+* --disable-conf-backup: Do not backup configuration files if they are
+                         already installed. Default is to create backup
+                         files like `*.~N~`.
+
+* --disable-wol:  Do not build and install wake-on-lan tool.
+
+.. _`download page`: http://projects.mandriva.org/projects/mmc/files
+
+.. include:: /pulse2/install/schema.rst
+
+.. include:: /pulse2/install/pulse-setup.rst
+
+.. include:: /pulse2/install/imaging.rst
+
+.. include:: /pulse2/install/dhcp.rst
+
+.. include:: /pulse2/install/nfs.rst
+
+.. include:: /pulse2/install/tftp.rst
