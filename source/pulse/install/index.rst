@@ -5,7 +5,7 @@ Installation
 Pulse2 quick install guide.
 
 In order to install Pulse2 and it's plugins you first need to install and
-configure :doc:`MMC </mmc/intro>`.
+configure :ref:`mmc`.
 
 Pre-requisites
 ==============
@@ -15,12 +15,12 @@ properly:
 
 * mmc-core framework
 * python >= 2.5, with the following modules:
-  * sqlalchemy
-  * mysqldb
+ * sqlalchemy
+ * mysqldb
 * OpenSSH client
 * iputils (ping)
 * perl, with the following modules:
-  * syslog
+ * syslog
 * gettext
 * NFS server (for imaging)
 * 7z (for win32 client generation)

@@ -1,3 +1,18 @@
+NFS install
+===========
+
+Debian::
+
+    # apt-get install nfs-kernel-server
+
+CentOS::
+
+    # yum install
+
+Mandriva::
+
+    # urpmi 
+
 NFS setup
 =========
 
@@ -8,6 +23,10 @@ In `/etc/exports` file, add the following lines::
     /var/lib/pulse2/imaging/postinst *(async,ro,no_root_squash,subtree_check)
 
 Then reload the new NFS configuration, as root.
+
+Debian::
+
+    # /etc/init.d/nfs-kernel-server restart
 
 Check the export list::
 

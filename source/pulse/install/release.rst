@@ -3,7 +3,12 @@ Installation from source tarbal
 ===============================
 
 In order to install Pulse2 and it's plugins you first need to install and
-configure :doc:`MMC </mmc/intro>`.
+configure :ref:`mmc`.
+
+.. include:: /pulse/install/requirements.rst
+
+Get the source code
+===================
 
 Get the current tarball at `download page`_:: 
 
@@ -69,14 +74,12 @@ The `configure` recognizes the following options to control how it operate:
 
 .. _`download page`: http://projects.mandriva.org/projects/mmc/files
 
-.. include:: /pulse2/install/schema.rst
+.. include:: /pulse/install/pulse-setup.rst
 
-.. include:: /pulse2/install/pulse-setup.rst
+.. include:: /pulse/install/imaging.rst
 
-.. include:: /pulse2/install/imaging.rst
+.. include:: /pulse/install/dhcp.rst
 
-.. include:: /pulse2/install/dhcp.rst
+.. include:: /pulse/install/nfs.rst
 
-.. include:: /pulse2/install/nfs.rst
-
-.. include:: /pulse2/install/tftp.rst
+.. include:: /pulse/install/tftp.rst

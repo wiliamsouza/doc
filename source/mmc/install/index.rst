@@ -42,7 +42,7 @@ or on our repository_.
 You will find there OpenLDAP, SAMBA and Postfix configuration files and also
 OpenLDAP schemas.
 
-.. _repository: https://github.com/mandriva-management-console/mmc/tree/master/base/agent/contrib/
+.. _repository: https://github.com/mandriva-management-console/mmc/tree/master/core/agent/contrib/
 
 Instalation options
 ===================

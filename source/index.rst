@@ -140,7 +140,7 @@ Pulse 2 is an easy-to-use, safe and flexible solution that allows you:
 
 * Do remote diagnostics and remote management.
 
-:doc:`Installation </mds/install/index>`
+:doc:`Installation </pulse/install/index>`
   Quick install guide.
 
 :doc:`Community </pulse/community>`
@@ -157,9 +157,6 @@ Pulse 2 is an easy-to-use, safe and flexible solution that allows you:
 
 More
 ====
-
-:doc:`Development environment </install/development>`
-  Installing the development version.
 
 :doc:`Fork it </development/contributing>`
   Contributing using github.
